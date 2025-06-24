@@ -14,6 +14,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import axios from "../utils/axios";
 import { baseURL } from '../utils/axios';
+import LoginImg from '../assets/loginimg.png'
 
 
 const Home = () => {
@@ -56,12 +57,18 @@ const Home = () => {
   };
 
   if (!user) {
-    return (
-      <Typography variant="h6" sx={{ mt: 4, textAlign: "center" }}>
+  return (
+    <Box textAlign="center" mt={5} color="#fff">
+      <img src={emptyImage} alt="Please Login" style={{ maxWidth: "300px", marginBottom: "20px" }} />
+      <Typography variant="h4" sx={{ mb: 2 }}>
         Please login to view content.
       </Typography>
-    );
-  }
+      <Typography variant="body1">
+        You must be logged in to access your profile and user list.
+      </Typography>
+    </Box>
+  );
+}
 
   return (
     <Box p={3} sx={{background: 'linear-gradient(530deg,rgb(16, 21, 21),rgb(20, 61, 57))'}}>
