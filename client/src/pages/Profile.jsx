@@ -11,6 +11,8 @@ import {
   CircularProgress,
 } from "@mui/material";
 import axios from "../utils/axios";
+import { baseURL } from '../utils/axios';
+
 
 const Profile = () => {
   const { id } = useParams();
