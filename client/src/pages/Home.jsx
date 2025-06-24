@@ -88,7 +88,7 @@ const Home = () => {
                 <Box display="flex" alignItems="center" gap={2}>
                   {u.profilePicture ? (
                     <Avatar
-                      src={`http://localhost:3000/uploads/${u.profilePicture}?t=${Date.now()}`}
+                      src={`${baseURL}/uploads/${u.profilePicture}?t=${Date.now()}`}
                       sx={{ width: 64, height: 64 }}
                     />
                   ) : (
@@ -151,7 +151,7 @@ const Home = () => {
           <Box display="flex" alignItems="center" gap={2}>
             {user.profilePicture ? (
               <Avatar
-                src={`http://localhost:3000/uploads/${user.profilePicture}?t=${Date.now()}`}
+                src={`${baseURL}/uploads/${user.profilePicture}?t=${Date.now()}`}
                 sx={{ width: 64, height: 64 }}
               />
             ) : (

@@ -145,7 +145,7 @@ const AdminPage = () => {
                 <TableCell sx={{ color: "#fff" }}>
                   <Box display="flex" alignItems="center" gap={1}>
                     {u.profilePicture ? (
-                      <Avatar src={`http://localhost:3000/uploads/${u.profilePicture}`} />
+                      <Avatar src={`${baseURL}/uploads/${u.profilePicture}`} />
                     ) : (
                       <Avatar>{getInitials(u.name)}</Avatar>
                     )}

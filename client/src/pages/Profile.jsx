@@ -47,7 +47,7 @@ const Profile = () => {
         profilePicture: res.data.profilePicture || "",
       });
       if (res.data.profilePicture) {
-        setImagePreview(`http://localhost:3000/uploads/${res.data.profilePicture}`);
+        setImagePreview(`${baseURL}/uploads/${res.data.profilePicture}`);
       }
     } catch (err) {
       console.error(err);

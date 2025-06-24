@@ -73,7 +73,7 @@ const NavBar = () => {
 
               <IconButton onClick={handleMenuOpen}>
                 {user.profilePicture ? (
-                  <Avatar src={`http://localhost:3000/uploads/${user.profilePicture}`} />
+                  <Avatar src={`${baseURL}/uploads/${user.profilePicture}`} />
                 ) : (
                   <Avatar sx={{ bgcolor: 'secondary.main' }}>
                     {user.name?.[0]?.toUpperCase()}
