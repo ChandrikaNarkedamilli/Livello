@@ -13,6 +13,8 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import axios from "../utils/axios";
+import { baseURL } from '../utils/axios';
+
 
 const Home = () => {
   const dispatch = useDispatch();

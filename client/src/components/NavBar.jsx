@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../features/authSlice';
 import Diversity1Icon from '@mui/icons-material/Diversity1';
+import baseURL from '../utils/axios'
 
 const NavBar = () => {
   const { user } = useSelector(state => state.auth);

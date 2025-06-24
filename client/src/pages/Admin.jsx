@@ -10,6 +10,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddIcon from '@mui/icons-material/Add';
 import axios from '../utils/axios';
+import { baseURL } from '../utils/axios';
 import { useNavigate } from 'react-router-dom';
 
 const AdminPage = () => {
