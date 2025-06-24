@@ -59,7 +59,7 @@ const Home = () => {
   if (!user) {
   return (
     <Box textAlign="center" mt={5} color="#fff">
-      <img src={emptyImage} alt="Please Login" style={{ maxWidth: "300px", marginBottom: "20px" }} />
+      <img src={LoginImg} alt="Please Login" style={{ maxWidth: "300px", marginBottom: "20px" }} />
       <Typography variant="h4" sx={{ mb: 2 }}>
         Please login to view content.
       </Typography>
