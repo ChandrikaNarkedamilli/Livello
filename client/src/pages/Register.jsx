@@ -4,7 +4,7 @@ import {
 } from '@mui/material';
 
 const RegisterPage = () => {
-  const [tabValue, setTabValue] = useState(1); // 0 = Login, 1 = Register
+  const [tabValue, setTabValue] = useState(1); 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -46,7 +46,7 @@ const RegisterPage = () => {
     >
       <Grid container item xs={11} md={8} sx={{ boxShadow: 10, borderRadius: 3, overflow: 'hidden', height: '600px', width: '800px' }}>
 
-        {/* Left Section with Tabs + Form */}
+        
         <Grid
           item
           xs={12}
@@ -59,7 +59,7 @@ const RegisterPage = () => {
             color: '#fff',
           }}
         >
-          {/* Tabs Section */}
+          
           <Box
             sx={{
               width: '45%',
@@ -75,18 +75,18 @@ const RegisterPage = () => {
               orientation="vertical"
               value={tabValue}
               onChange={(e, newVal) => setTabValue(newVal)}
-              TabIndicatorProps={{ style: { backgroundColor: 'white' } }} // white underline
+              TabIndicatorProps={{ style: { backgroundColor: 'white' } }} 
               sx={{
     '& .MuiTab-root': {
-      color: '#ccc', // Inactive tab color
+      color: '#ccc', 
       fontWeight: 500,
       alignItems: 'flex-start',
     },
     '& .Mui-selected': {
-      color: '#fff !important', // Force active tab label white
+      color: '#fff !important', 
     },
     '& .MuiTabs-indicator': {
-      backgroundColor: 'white', // Underline color
+      backgroundColor: 'white', 
     },
   }}
             >
@@ -95,7 +95,7 @@ const RegisterPage = () => {
             </Tabs>
           </Box>
 
-          {/* Form Section */}
+          
           <Box
             sx={{
               width: '55%',
@@ -114,7 +114,7 @@ const RegisterPage = () => {
             </Typography>
 
             <Box component="form" onSubmit={handleSubmit} mt={2}>
-              {/* If Login Tab */}
+              
               {tabValue === 0 && (
                 <>
                   <TextField
@@ -185,7 +185,7 @@ const RegisterPage = () => {
                 </>
               )}
 
-              {/* If Register Tab */}
+              
               {tabValue === 1 && (
                 <>
                   <TextField

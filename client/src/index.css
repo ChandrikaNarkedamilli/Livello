@@ -5,5 +5,5 @@ body {
   background: linear-gradient(530deg, rgb(16, 21, 21), rgb(20, 61, 57));
   background-repeat: no-repeat;
   background-size: cover;
-  color: white; /* Optional: Makes default text visible on dark background */
+  color: white;
 }

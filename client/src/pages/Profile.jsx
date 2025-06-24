@@ -95,13 +95,13 @@ const Profile = () => {
       const profileRes = await axios.get(`/users/${id || user.id}`, { withCredentials: true });
 
       if (!id || user.id === id) {
-        dispatch(updateUser(profileRes.data)); // Update Redux store for logged-in user
+        dispatch(updateUser(profileRes.data)); 
       }
 
       if (user?.role === "admin") {
-        navigate("/"); // Admin to admin page (user list)
+        navigate("/"); 
       } else {
-        navigate("/"); // User to home
+        navigate("/"); 
       }
 
     } catch (err) {

@@ -191,7 +191,7 @@ const Home = () => {
         </Card>
       )}
 
-      {/* Pagination for Admin */}
+      
       {user.role === "admin" && (
         <Box mt={3} display="flex" justifyContent="center" alignItems="center" gap={2}>
           <Button variant="outlined" onClick={handlePrev} disabled={currentPage === 1} sx={{ color: '#fff', borderColor: '#fff' }}>

@@ -189,7 +189,7 @@ const AdminPage = () => {
         </Button>
       </Box>
 
-      {/* Dialog to Create New User */}
+      
       <Dialog open={open} onClose={() => setOpen(false)} slotProps={{ paper: { sx: { width: 500 } } }}>
         <DialogTitle>Create New User</DialogTitle>
         <DialogContent sx={{ display: 'flex', flexDirection: 'column', gap: 2, mt: 1 }}>

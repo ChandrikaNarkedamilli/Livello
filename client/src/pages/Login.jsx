@@ -8,7 +8,7 @@ import axios from '../utils/axios';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const [tabValue, setTabValue] = useState(0); // 0 = Login, 1 = Register
+  const [tabValue, setTabValue] = useState(0); 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
